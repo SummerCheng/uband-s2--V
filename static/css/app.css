@@ -22,9 +22,12 @@
 	
 }
 
-.name_title{
+.name{
 	text-align:center;
 	color: #FFFFFF;
+}
+.name_title{
+	text-align:center;
 }
 
 .brief_intr{
