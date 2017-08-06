@@ -20,9 +20,9 @@
 		<h2 class="name_title">{{data.name}}</h2>
 		<h3 class="brief_intr">{{data.intr}}</h3>
 		<ul class='intr'>
-<!-- 			<li>{{data.career[0]}}</li> 
-            <li>{{data.career[1]}}</li>
-            <li>{{data.career[2]}}</li> -->
+        {% for career in data.career %}
+            <li>{{ career }}</li>
+        {% endfor %}
         </ul>
 	</div>
 	
