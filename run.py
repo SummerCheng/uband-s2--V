@@ -1,6 +1,7 @@
 from flask import Flask
 from flask import render_template
 import json
+import codecs
 
 app = Flask(__name__)
 
@@ -8,11 +9,16 @@ def readJson(student_number):
 	file_text=''
 	json_folder = 'static/json/'
 	try:
-		file = open(json_folder+str(student_number)+'.json', 'r',encoding='utf-8')
+		file = codecs.open(json_folder+student_number+'.json', 'r+','utf-8')
+		# file = open(json_folder+student_number+'.json', 'r+',encoding='utf-8')
+	except:
+		print ("!!!cannot open!!!")
+	try:		
 		file_text = file.read()
 		file_text = dict(json.loads(file_text))
 	except:
-		pass
+		print ("!!!cannot read!!!")
+		print (file_text)
 	return file_text
 
 @app.route('/')
