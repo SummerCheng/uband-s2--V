@@ -25,4 +25,4 @@ def intro(student_number):
 	return render_template(str(student_number)+".html", data=file_text)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+	app.run(debug=True)
