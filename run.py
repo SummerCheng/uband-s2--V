@@ -25,7 +25,7 @@ def readJson(student_number):
 def homepage():
 	return render_template('index.html')
 
-@app.route('/<string:student_number>')
+@app.route('/<string:student_number>/details')
 def intro(student_number):
 	file_text = readJson(student_number)
 	return render_template(str(student_number)+".html", data=file_text)
