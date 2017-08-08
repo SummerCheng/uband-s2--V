@@ -1,0 +1,51 @@
+.Circle-img {
+    display: block;
+    border-radius: 50%;
+}
+ 
+body{
+    width:414px;
+    height:716px;
+} 
+
+/*Top*/
+.Top{
+    padding-top:30px;   /*Top-Img*/
+    padding-bottom: 25px;   /*Desc-Bottom*/
+    background-color:#FF9999; 
+}
+
+.Top-img{
+    width:60px;
+    height:60px;
+    margin:0 auto;
+}
+
+.Top-name{
+    padding-top:7px;    /*Img-Name*/
+    padding-bottom:3px; /*Name-Desc*/
+    letter-spacing: 1px;
+    font-size:15px;
+    color:#FF9999; 
+    font-weight: bold;
+    text-align:center;
+}
+
+.Top-desc{
+    font-size:10px;    
+    color:#FF9999;         
+    text-align:center;
+}
+
+/*Bottom*/
+.box-margin{   
+    padding:0 30px;
+    padding-top:30px;
+}
+
+.box-border{
+    border:solid 1px;    
+    border-color:grey;
+    border-radius:10px;
+    margin:0 auto;
+}
