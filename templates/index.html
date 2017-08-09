@@ -5,43 +5,36 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
     <title>木子李V</title>
     <link rel="stylesheet" href="/static/css/weui.css">
-     <link rel="stylesheet" href="/static/css/new.css?q=1211a1sas1aaaaaaaaaaaaaaasaaaaaaa1112"> 
+     <link rel="stylesheet" href="/static/css/new.css"> 
 </head>
 <body ontouchstart>
     <!-- Top -->
     <div class="Top">
-		<img class="Top-img Circle-img" src="/static/img/uband-logo.png" alt="">
+		<img class="Top-img Circle-img" src="/static/img/team.jpg" alt="">
 		<p class="Top-name" style="color:white">木子李V</p>
 		<p class="Top-desc" style="color:white">小组介绍xxxxxxxxxxxxxxxxxxxx</p>
     </div>
     <!-- end of Top-->
     <div class="Bottom">
-        <div class="box-margin">
-            <div class="weui-panel__bd box-border">
-                    <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
-                        <div class="weui-media-box__hd">
-                            <img class="weui-media-box__thumb" src="/static/img/ddd.jpg" style="display:block;border-radius:50%" alt="">
-                        </div>
-                        <div class="weui-media-box__bd">
-                            <h4 class="weui-media-box__title">段艺璇</h4>
-                            <p class="weui-media-box__desc">“北京没有输！”</p>
-                        </div>
-                    </a>
-            </div>
+        {% for person in data %}
+        <div class="weui-panel__bd person-panel">
+                <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+                    <div class="weui-media-box__hd">
+                        <img class="weui-media-box__thumb" src={{person.icon}} style="display:block;border-radius:50%" alt="">
+                    </div>
+                    <div class="weui-media-box__bd">
+                        <h4 class="weui-media-box__title person-name">{{person.name}}</h4>
+                        <p class="weui-media-box__desc person-desc">{{person.desc}}</p>
+                        {% for label in person.labels %}
+                        <label class="person-label" for="">{{label}}</label>
+                        {% endfor %}
+                    </div>
+                    <div class='person-checkin'>
+                        <p>{{person.checkin}}</p>
+                    </div>
+                </a>
         </div>
-        <div class="box-margin">
-            <div class="weui-panel__bd box-border">
-                    <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
-                        <div class="weui-media-box__hd">
-                            <img class="weui-media-box__thumb" src="/static/img/uband-logo.png" style="display:block;border-radius:50%" alt="">
-                        </div>
-                        <div class="weui-media-box__bd">
-                            <h4 class="weui-media-box__title">锅蜀黍</h4>
-                            <p class="weui-media-box__desc">这是一个很厉害的人</p>
-                        </div>
-                    </a>
-            </div>
-        </div>
+        {% endfor %}
 	</div>
 </body>
 </html>

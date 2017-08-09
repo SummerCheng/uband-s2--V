@@ -2,11 +2,6 @@
     display: block;
     border-radius: 50%;
 }
- 
-body{
-    width:414px;
-    height:716px;
-} 
 
 /*Top*/
 .Top{
@@ -38,14 +33,38 @@ body{
 }
 
 /*Bottom*/
-.box-margin{   
-    padding:0 30px;
-    padding-top:30px;
+.Bottom{
+    padding:10px 0;
 }
 
-.box-border{
-    border:solid 1px;    
-    border-color:grey;
+.person-panel{
+    margin:0 25px;
+    margin-top:20px;
+    border: solid #efefef 2px;    
     border-radius:10px;
-    margin:0 auto;
+}
+
+.person-name{
+    font-size:15px;
+}
+.person-desc{
+    font-size:13px;
+}
+
+.person-label{
+    width:50px;
+    height:17px;
+    background-color:#ff4060;
+    border-radius: 6px;
+    font-size: 10px;
+    color: white;
+    padding: 2px 4px;
+}
+
+.person-checkin{
+    width:70px;
+    margin-top:-40px;
+    text-align:right;
+    font-size:11px;
+    color:#828282;
 }

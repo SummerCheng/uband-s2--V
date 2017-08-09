@@ -1,0 +1,23 @@
+[
+    {
+        "name":"段艺璇",
+        "desc":"\"北京没有输!\"",
+        "icon":"/static/img/ddd.jpg",
+        "labels":["idol","singer"],
+        "checkin":123
+    },
+    {
+        "name":"Gakki",
+        "desc":"xxxxx",
+        "icon":"/static/img/selfie.png",
+        "labels":["xxx","xxx"],
+        "checkin":123
+    },
+    {
+        "name":"Vnicorn",
+        "desc":"xxxxx",
+        "icon":"/static/img/vni.jpg",
+        "labels":["xxx","xxx"],
+        "checkin":123
+    }
+]
