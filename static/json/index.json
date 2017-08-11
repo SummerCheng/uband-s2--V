@@ -7,11 +7,11 @@
         "checkin":123
     },
     {
-        "name":"Gakki",
-        "desc":"xxxxx",
+        "name":"Summer",
+        "desc":"永远18岁",
         "icon":"/static/img/selfie.png",
-        "labels":["xxx","xxx"],
-        "checkin":123
+        "labels":["singer","actress"],
+        "checkin":1
     },
     {
         "name":"Vnicorn",
