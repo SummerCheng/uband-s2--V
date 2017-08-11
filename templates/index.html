@@ -5,20 +5,25 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0"> <!-- 移动页面标识 -->
     <title>木子李V</title>
     <link rel="stylesheet" href="/static/css/weui.css">
-    <link rel="stylesheet" href="/static/css/new.css"> 
+    <link rel="stylesheet" href="/static/css/index.css"> 
 </head>
 <body ontouchstart>
     <!-- Top -->
     <div class="Top">
-		<img class="Top-img Circle-img" src="/static/img/team.jpg" alt="">
-		<p class="Top-name" style="color:white">木子李V</p>
-		<p class="Top-desc" style="color:white">小组介绍xxxxxxxxxxxxxxxxxxxx</p>
+        <div class="Top-img-bg">
+            <img style="opacity: 0"="Top-back" src="/static/img/back.png" alt="">              
+            <img class="Top-icon" src="/static/img/team.jpg" alt="">
+        </div>
+        <div class="Top-desc-bg">
+	    	<p class="Top-name">木子李V</p>
+            <p class="Top-desc">小组介绍xxxxxxxxxxxxxxxxxxxx</p>
+        </div>
     </div>
     <!-- end of Top-->
     <div class="Bottom">
         {% for person in data %}
         <div class="weui-panel__bd person-panel">
-                <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+                <a href="/{{person.student_number}}/details" class="weui-media-box weui-media-box_appmsg">
                     <div class="weui-media-box__hd">
                         <img class="weui-media-box__thumb" src={{person.icon}} style="display:block;border-radius:50%" alt="">
                     </div>
