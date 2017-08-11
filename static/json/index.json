@@ -1,5 +1,6 @@
 [
     {
+        "student_number":"A14075",
         "name":"段艺璇",
         "desc":"\"北京没有输!\"",
         "icon":"/static/img/ddd.jpg",
@@ -7,6 +8,7 @@
         "checkin":123
     },
     {
+        "student_number":"A10134",
         "name":"Summer",
         "desc":"永远18岁",
         "icon":"/static/img/selfie.png",
@@ -14,6 +16,7 @@
         "checkin":1
     },
     {
+        "student_number":"A10509",
         "name":"Vnicorn",
         "desc":"xxxxx",
         "icon":"/static/img/vni.jpg",
