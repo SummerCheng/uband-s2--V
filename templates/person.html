@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
     <title>{{data.name}}</title>
     <link rel="stylesheet" href="/static/css/weui.css">
-     <link rel="stylesheet" href="/static/css/person.css"> 
+    <link rel="stylesheet" href="/static/css/person.css"> 
 </head>
 <body ontouchstart>
     <!-- Top -->
@@ -20,25 +20,25 @@
         </div>
     </div>
 
-        <div class="navbar">
-            <div class="navbar_item navbar_item_on">
-                自言自语
-            </div>
-            <div class="navbar_item">
-                未来砖家
-            </div>
-            <div class="navbar_item">
-                私人癖好
-            </div>
-            <div class="navbar_item">
-                欢迎勾搭
-            </div>
-        </div> 
+    <div class="navbar">
+        <div class="navbar_item navbar_item_on">
+            自言自语
+        </div>
+        <div class="navbar_item">
+            未来砖家
+        </div>
+        <div class="navbar_item">
+            私人癖好
+        </div>
+        <div class="navbar_item">
+            欢迎勾搭
+        </div>
+    </div> 
     <!-- end of Top-->
     <div class="Bottom">
-
-
-
+        <div class="details-intro">
+            {{data.intro | safe}}
+        </div>
 	</div>
 </body>
 </html>
