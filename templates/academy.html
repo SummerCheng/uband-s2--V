@@ -36,7 +36,9 @@
     </div>
     <!-- end of Top-->
     <div class="Bottom">
-        {{data.academy | safe}}
+	{% for issue in data.academy %}
+    <div>{{issue| safe}}</div>
+    {% endfor %}
 	</div>
 </body>
 </html>
